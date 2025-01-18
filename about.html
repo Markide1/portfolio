@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Same head content as index.html -->
+    <title>Markide | About</title>
+    <link rel="stylesheet" href="/styles/about.css">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <nav>
+    <a href="index.html">
+        <img src="images/Logo.png" class="Logo" alt="Markide Logo">
+    </a>
+    <ul id="sidemenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+    </ul>
+    <i class="fa-solid fa-bars" onclick="openmenu()"></i> 
+</nav>
+    <div id="about">
+      <div class="container">
+          <div class="row">
+              <div class="about-col-1">
+                  <img src="images/Pr.PNG">
+              </div>
+              <div class="about-col-2">
+                  <h1 class="sub-title">About Me:</h1>
+                  <p><b>Hello, world. I'm an expert in SEO writing and coding. I offer a unique blend of SEO writing and coding skills to enhance your online presence.</b><br><br>
+                      <b><i>Why choose me?</b></i><br><br>
+                      <ol>
+                      <b><li>Proven results:</b> I deliver content that drives organic traffic and optimize websites for peak performance.</li><br>
+                      <b><li>Versatility:</b> Whether it's writing engaging content or tackling technical SEO challenges, I adapt to your needs.</li><br>
+                      <b><li>Data-driven:</b> My strategies are rooted in data, ensuring continuous improvement.</li><br>
+                      <b><li>Timely and client-focused:</b> I meet deadlines and prioritize your vision and goals.</li><br>
+                      </ol>
+                      Let's collaborate to boost your online success. Contact me today.
+                  </p><br><br> 
+                  <div class="tab-titles">
+                      <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                      <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                      <p class="tab-links" onclick="opentab('education')">Education</p>
+                  </div>
+                  <div class="tab-contents active-tab" id="skills">
+                      <ul>
+                          <li><span> SEO Writing</span><br>Crafting the best Content!</li>
+                          <li><span> Web Development</span><br>Web App Development </li>
+                          <li><span> WordPress Development</span><br>Creating and Managing Websites </li>
+                      </ul>
+                  </div>
+                  <div class="tab-contents" id="experience">
+                      <ul>
+                          <li><span> 2021 September – Current</span><br>B.Sc. Computer Science at <a href="https://www.chuka.ac.ke/" target="_blank"> <b>Chuka University</b></a> </li>
+                          <li><span> 2020 December–July 2021 </span><br>SEO Writing & WordPress Management: <a href="https://cloudoon.com/" target="_blank"> <b>Cloudoon</b></a> </li>
+                      </ul>
+                  </div>
+                  <div class="tab-contents" id="education">
+                      <ul>
+                          <li><span> 2019</span><br>Diploma in Computer Science at <a href="https://www.chuka.ac.ke/" target="_blank"> <b>Chuka University</b></a> </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright ©Markide. Let's Build Together!</p>
+    </div>
+    <script src="/js/tabs.js"></script>
+    <script src="/js/menu.js"></script>
+</body>
+</html>

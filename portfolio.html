@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Same head content as index.html -->
+    <title>Markide | Portfolio</title>
+    <link rel="stylesheet" href="/styles/portfolio.css">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <nav>
+    <a href="index.html">
+        <img src="images/Logo.png" class="Logo" alt="Markide Logo">
+    </a>
+    <ul id="sidemenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+    </ul>
+    <i class="fa-solid fa-bars" onclick="openmenu()"></i> 
+</nav>
+    <div id="portfolio">
+      <div class="container">
+          <h1 class="sub-title">My Work:</h1>
+          <div class="work-list">
+              <div class="work">
+                  <img src="images/coding.jpg">
+                  <div class="layer">
+                      <h3>This Portfolio</h3>
+                      <p>This is my first project! Changes will often happen, always visit for more!</p>
+                      <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  </div>
+              </div>
+              <div class="work">
+                  <img src="images/SEO.jpg">
+                  <div class="layer">
+                      <h3>Truehost Support Content</h3>
+                      <p>I have been writing and managing Truehost WordPress site</a></p>
+                      <a href="https://truehost.com/support/author/mark/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  </div>
+              </div>
+          </div>
+          <a href="#" class="btn">See more</a>
+      </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright ©Markide. Let's Build Together!</p>
+</div>
+    <script src="/js/menu.js"></script>
+</body>
+</html>
