@@ -1,77 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Markide's portfolio showcasing expertise in SEO writing, web development, and WordPress management. Discover my services and projects."
-    />
-    <meta
-      name="keywords"
-      content="SEO Writing, Web Development, WordPress Management, Portfolio, Freelancer"
-    />
-    <meta name="author" content="Markide" />
-    <title>Markide | Home</title>
-    <link rel="stylesheet" href="/styles/index.css" />
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
-    <script
-      src="https://kit.fontawesome.com/ac8436b618.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <div id="header">
-      <div class="container">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ac8436b618.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
         <nav>
-          <a href="index.html">
-            <img src="images/Logo.png" class="Logo" alt="Markide Logo" />
-          </a>
-          <ul id="sidemenu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-          </ul>
-          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            <img src="images/Logo.png" class="Logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i> 
         </nav>
         <div class="header-text">
-          <p>SEO Writer & Code Enthusiast.</p>
-          <h1>
-            Hi, I'm <span>Markide</span><br />
-            from Kenya.
-          </h1>
-          <h2 class="fade-text">
-            <i class="fas fa-cogs"></i> Site Under Development...
-          </h2>
-          <style>
-            @keyframes fade {
-              0% {
-                opacity: 1;
-              }
-              50% {
-                opacity: 0;
-              }
-              100% {
-                opacity: 1;
-              }
-            }
-
-            .fade-text {
-              text-align: center;
-              font-weight: bold;
-              animation: fade 3s ease-in-out 4s infinite; /* Animation duration: 3s, delay: 4s */
-            }
-          </style>
+            <p>SEO Writer & Code Enthusiast</p>
+            <h1>Hi, I'm <span>Markide</span><br> from Kenya</h1>
         </div>
-      </div>
+    </div>
+</div>
+<!-- ------------about----- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Pr.PNG">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me:</h1>
+                <p><b>Hello, world. I'm an expert in SEO writing and coding. I offer a unique blend of SEO writing and coding skills to enhance your online presence.</b><br><br>
+                    <b><i>Why choose me?</b></i><br><br>
+                    <ol>
+                    <b><li>Proven results:</b> I deliver content that drives organic traffic and optimize websites for peak performance.</li><br>
+                    <b><li>Versatility:</b> Whether it's writing engaging content or tackling technical SEO challenges, I adapt to your needs.</li><br>
+                    <b><li>Data-driven:</b> My strategies are rooted in data, ensuring continuous improvement.</li><br>
+                    <b><li>Timely and client-focused:</b> I meet deadlines and prioritize your vision and goals.</li><br>
+                    </ol>
+                    Let's collaborate to boost your online success. Contact me today.
+                </p><br><br> 
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span> SEO Writing</span><br>Crafting the best Content!</li>
+                        <li><span> Web Development</span><br>Web App Development </li>
+                        <li><span> WordPress Development</span><br>Creating and Managing Websites </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span> 2021 September – Current</span><br>B.Sc. Computer Science at Chuka University </li>
+                        <li><span> 2020 December–July 2021 </span><br>SEO Writing & WordPress Management: <a href="https://cloudoon.com/" target="_blank"> <b>Cloudoon</b></a> </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span> 2019</span><br>Diploma in Computer Science at Chuka University </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<!------------services--------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services:</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-square-pen fa-shake"></i>
+                <b><h2>SEO Writing</h2></b>
+                <p> I’m a seasoned freelance technology writer with over three years of experience. <br><br>I have excellent writing and research skills, allowing me to create unique and original articles for all my clients.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code fa-bounce"></i>
+                <b><h2>Coding</h2></b>
+                <p>I began learning to code as a pastime, but my interest grew over time! <br><br>I have created this portfolio from scratch using HTML, CSS, and JavaScript.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-wordpress fa-fade"></i>
+                <b><h2>WordPress Management</h2></b>
+                <p>WordPress has always piqued my interest as it has over 43% of the World’s websites. The design and management of the website are also straightforward.<br><br>
+                   I have familiarized myself with various tools to troubleshoot and ensure the website's smooth operation.
+                    </p><br>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------portfolio------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work:</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/coding.jpg">
+                <div class="layer">
+                    <h3>This Portfolio</h3>
+                    <p>This is my first project! Changes will often happen, always visit for more!</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/SEO.jpg">
+                <div class="layer">
+                    <h3>Truehost Support Content</h3>
+                    <p>I have been writing and managing Truehost WordPress site</a></p>
+                    <a href="https://truehost.com/support/author/mark/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+
+    </div>
+</div>
+
+<!--------------contact------------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me:</h1>
+                <p><i class="fa-solid fa-paper-plane fa-beat"></i> mail@markide.info</p> 
+                <div class="social-icons">
+                    <a href="https://github.com/Markide1" target="_blank"><i class="fa-brands fa-github fa-beat-fade"></i></a>
+                    <a href="https://www.linkedin.com/in/mark-ndwiga-baa0461b4/" target="_blank"><i class="fa-brands fa-linkedin fa-bounce"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="What's Your Name?" required autocomplete="given-name">
+                    <input type="email" name="Email" placeholder="Your Email" required autocomplete="off">
+                    <textarea name="Message" rows="6" placeholder="Your Thoughts?"></textarea>
+                    <button type="submit"  class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
     </div>
     <div class="copyright">
-      <p>Copyright ©Markide. Let's Build Together!</p>
+        <p>Copyright ©Markide. Let's Build Together!</p>
     </div>
-    <script src="/js/menu.js"></script>
-  </body>
+</div>
+
+<script>
+
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzLxTBYvN6Ozl0NTHWX0hlMbSpEZjEbsDEUTG25TvpdEj5mYrwcucYlTvIfmq6IRQeJ/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        }, 3000)
+        form.reset()
+
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>    
+
+</script>
+</div>
+</body>
 </html>
